@@ -1,0 +1,11 @@
+<br>
+{{firstLabel}}: <br>
+<select [formControl]="_firstId">
+  <option *ngFor="let first of firsts" [value]="first.firstId">{{first.name}}</option>
+</select><br><br>
+
+{{secondLabel}}: <br>
+<select  [formControl]="_secondId">
+  <option value="0">---select---</option>
+  <option *ngFor="let second of seconds" [value]="second.secondId">{{second.name}}</option>
+</select>
